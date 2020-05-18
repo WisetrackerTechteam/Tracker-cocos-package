@@ -133,7 +133,7 @@ WiseTracker::setGoal("g3", 1);
 
 ```csharp
 WiseTracker::setProduct("상품코드", "상품명");
-WiseTracker::setProductCategory("카테고리코드", "카테고리명");
+WiseTracker::setProductCategory("카테고리코드");
 WiseTracker::setPageIdentity("PDV");
 ```
 
@@ -144,8 +144,8 @@ WiseTracker::setPageIdentity("PDV");
 ```csharp
 // 상품의 고유 코드(ID)와 상품명
 WiseTracker::setProduct("P0102884", "클래식 챌린지 맨투맨");
-// 상품이 속한 카테고리의 고유 코드(ID)와 카테고리명
-WiseTracker::setProductCategory("C1054", "아우터");
+// 상품이 속한 카테고리명
+WiseTracker::setProductCategory("아우터");
 WiseTracker::setPageIdentity("PDV");
 ```
 
@@ -221,7 +221,7 @@ WiseTracker::sendGoalData();
 
 ```csharp
 WiseTracker::setProduct("상품코드", "상품명");
-WiseTracker::setProductCategory("카테고리코드", "카테고리명");
+WiseTracker::setProductCategory("카테고리명");
 WiseTracker::setPageIdentity("OCA");
 WiseTracker::sendTransaction();
 ```
@@ -233,8 +233,8 @@ WiseTracker::sendTransaction();
 ```csharp
 // 상품의 고유 코드(ID)와 상품명
 WiseTracker::setProduct("RT3566403", "스판 코튼팬츠");
-// 상품이 속한 카테고리의 고유 코드(ID)와 카테고리명
-WiseTracker::setProductCategory("02871", "남성의류");
+// 상품이 속한 카테고리명
+WiseTracker::setProductCategory("남성의류");
 WiseTracker::setPageIdentity("OCA");
 WiseTracker::sendTransaction();
 ```
